@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Recursive:300,regular,500,600,700,800,900);
+
+#mensaje1{
+    display: none;
+    padding: 10px 30px;
+}
+
+body{
+    background-color:#cc0a41;
+    font-family: "Recursive", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header{
+    background-color: whitesmoke;
+    padding:10px 40px;
+    margin:0;
+}
+
+form ul{
+    list-style-type: none;
+}
+
+ul{
+    padding:10px 40px;
+}
+
+form li{
+    padding:8px 5px;
+}
+
+.contenedorLi1 input{
+    width: 100%;
+    height: 30px;
+}
+
+form textarea{
+    width: 100%;
+}
+
+#contenedorFormulario{
+    background-color:white;
+    border-radius:6px;
+    width:450px;
+    max-width: 100%;
+
+}
+
+.contenedorCheckBox input{
+    width: 50%;
+}
+
+/* Errores */
+
+#errorRut{
+    display: none;
+    color:red;
+}
+
+#errorTelefono{
+    display: none;
+    color:red;
+}
+
+/* Botones */
+
+#enviar{
+    background-color: #cc0a41;
+    border:3px solid #cc0a41;
+    color:white;
+    font-family: "Recursive";
+    padding: 11px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#limpiar{
+    background-color: #cc0a41;
+    border:3px solid #cc0a41;
+    color:white;
+    font-family: "Recursive";
+    padding: 11px;
+    border-radius: 5px;
+    width: 100%;
+}

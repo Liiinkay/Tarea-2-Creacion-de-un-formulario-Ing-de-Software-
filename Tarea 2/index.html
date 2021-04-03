@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Formulario</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    
+    <body>
+        <div id="contenedorFormulario">
+            <div id="mensaje1"></div>   
+            <form id="formulario" method="post" action="#">
+                <header>
+                    <h1>Formulario</h1>
+                </header>
+                <ul>
+                    <li class="contenedorLi1">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" type="text" placeholder="Nombre" required/>
+                    </li>
+                    <li class="contenedorLi1">
+                        <label for="apellidos">Apellidos</label>
+                        <input id="apellidos" type="text" placeholder="Apellidos" required/>
+                    </li>
+                    <li class="contenedorLi1">
+                        <label for="rut">RUT</label>
+                        <input id="rut" type="text" placeholder="Rut" pattern="[0-9]*[kK]?" required/>
+                        <small id="errorRut">Buenas</small>
+                    </li>
+                    <li class="contenedorLi1">
+                        <label for="email">Correo Electrónico</label>
+                        <input id="email" type="email" placeholder="Correo Electrónico " required/>
+                    </li>
+                    <li class="contenedorLi1">
+                        <label for="numero">Numero de telefono</label>
+                        <input id="telefono" type="number" placeholder="Numero de telefono" required/>
+                        <small id="errorTelefono">Buenas</small>
+                    </li>
+                    <li class="contenedorCheckBox">
+                        <p>Lenguajes de Programacion de Interes</p>
+                        <input type="checkbox" name="checkbox1" id="checkbox1"/>
+                        <label for="checkbox1">Python</label>
+                        <input type="checkbox" name="checkbox2" id="checkbox2"/>
+                        <label for="checkbox2">Java</label>
+                        <input type="checkbox" name="checkbox4" id="checkbox4"/>
+                        <label for="checkbox4">PHP</label>
+                        <input type="checkbox" name="checkbox3" id="checkbox3"/>
+                        <label for="checkbox3">TypeScript</label>
+                        <input type="checkbox" name="checkbox5" id="checkbox5"/>
+                        <label for="checkbox5">C#</label>
+                        <input type="checkbox" name="checkbox6" id="checkbox6"/>
+                        <label for="checkbox6">C++</label>
+                    </li>
+                    <li>
+                        <label for="experiencia-laboral">Años de Experiencia Laboral</label>
+                        <br><br>
+                        <input type="radio" value="exp1" name="experiencia-laboral" id="exp1"/>
+                        <label for="id1">1</label>
+                        <input type="radio" value="exp2" name="experiencia-laboral" id="exp2"/>
+                        <label for="id2">2</label>
+                        <input type="radio" value="exp3" name="experiencia-laboral" id="exp3"/>
+                        <label for="id3">3</label>
+                        <input type="radio" value="exp4" name="experiencia-laboral" id="exp4"/>
+                        <label for="id4">4</label>
+                        <input type="radio" value="exp5" name="experiencia-laboral" id="exp5"/>
+                        <label for="id5">5 o más</label>
+                    </li>
+                    <li>
+                        <label for="descripcion">Descripcion</label>
+                        <textarea id="descripcion" maxlength="300"></textarea>
+                    </li>
+                    <li class="contenedorLi1">
+                        <label>Conocimiento de Programacion</label>
+                        <input type="range" min="0" max="10" value="0"/>
+                    </li>
+                    <li>
+                         <button type="submit" id="enviar">Enviar Datos</button>
+                    </li>
+                    <li>  
+                        <button type="reset" id="limpiar">Limpiar Datos</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <script src="js/app.js" async defer></script>
+    </body>
+</html>
